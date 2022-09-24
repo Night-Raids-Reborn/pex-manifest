@@ -8,6 +8,7 @@
 <!-- Custom repos -->
   <project path="manifest" name="manifest" remote="pex" />
   <project path="vendor/aosp" name="vendor_aosp" remote="pex" />
+  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="pex" />
   <project path="frameworks/base" name="frameworks_base" remote="pex" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="pex" />
   <project path="packages/apps/Pextension" name="Fan-Edition_Settings" remote="pex" />
