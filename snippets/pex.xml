@@ -15,4 +15,9 @@
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="pex" />
   <project path="packages/apps/Pextension" name="Fan-Edition_Settings" remote="pex" />
 
+  <!-- OTA Repos -->
+  <project path="OTA" name="OTA" remote="pex" revision="trece" >
+      <linkfile src="support/ota.py" dest="ota.py" />
+    </project>
+
 </manifest>
