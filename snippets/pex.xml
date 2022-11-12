@@ -12,10 +12,10 @@
   <!-- Custom repos -->
   <project path="manifest" name="manifest" remote="pex" />
   <project path="vendor/aosp" name="vendor_aosp" remote="pex" />
-  <project path="frameworks/base" name="frameworks_base" remote="pex" />
+  <project path="frameworks/base" name="Night-Raids-Reborn/pex_fwb" remote="github" revision="snow" clone-depth="1" />
   <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="pex" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="pex" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="pex" />
+  <project path="packages/apps/Settings" name="Night-Raids-Reborn/pex_apps_Settings" remote="github" revision="snow" clone-depth="1" />
   <project path="packages/apps/SnowHouse" name="Fan-Edition_Settings" remote="pex" />
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="pex" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="pex" />
