@@ -109,7 +109,7 @@
   <project path="packages/apps/Stk" name="packages_apps_Stk" remote="pixel" />
   <project path="packages/apps/Traceur" name="packages_apps_Traceur" remote="pixel" />
   <project path="packages/modules/adb" name="packages_modules_adb" remote="pixel" />
-  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="pixel" />
+   <project path="packages/modules/Connectivity" name="Night-Raids-Reborn/packages_modules_Connectivity" remote="github" revision="twelve" clone-depth="1" />
   <project path="packages/modules/DnsResolver" name="packages_modules_DnsResolver" remote="pixel" />
   <project path="packages/modules/NetworkStack" name="packages_modules_NetworkStack" remote="pixel" />
   <project path="packages/modules/Permission" name="packages_modules_Permission" remote="pixel" />
