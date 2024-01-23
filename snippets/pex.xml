@@ -33,9 +33,6 @@
 
   <remote name="gitlab"
           fetch="https://gitlab.com" />
-
-  <remote name="github"
-          fetch="https://gitlab.com" />
   
   <remote  name="AOSPA"
            fetch="https://github.com/AOSPA"
