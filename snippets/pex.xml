@@ -33,6 +33,9 @@
 
   <remote name="gitlab"
           fetch="https://gitlab.com" />
+
+  <remote name="github"
+          fetch="https://gitlab.com" />
   
   <remote  name="AOSPA"
            fetch="https://github.com/AOSPA"
@@ -41,6 +44,10 @@
    <remote name="ext"
           fetch="https://github.com/exthmui/"
           revision="exthm-11" />
+  
+  <remote name="raid"
+          fetch="https://github.com/Night-Raids-Reborn/"
+          revision="ace" />
 
   <!-- CodeAurora additions -->
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="pixel" />
@@ -120,7 +127,7 @@
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="frameworks_av" remote="pixel-plus" />
-  <project path="frameworks/base" name="frameworks_base" remote="pex"  />
+  <project path="frameworks/base" name="pex_fwb" remote="raid"  />
   <project path="frameworks/native" name="frameworks_native" remote="pixel-plus" />
   <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="pixel" />
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="pixel" />
@@ -146,12 +153,12 @@
   <project path="build/blueprint" name="build_blueprint" remote="pixel" />
   <project path="bootable/recovery" name="bootable_recovery" remote="pixel" />
   <project path="development" name="development" remote="pixel" />
-  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="pex" />
-  <project path="manifest" name="manifest" remote="pex" />
+  <project path="device/custom/sepolicy" name="device_pex_sepolicy" remote="raid" />
+  <project path="manifest" name="pex-manifest" remote="raid" />
   <project path="platform_testing" name="platform_testing" remote="pixel" />
-  <project path="vendor/aosp" name="vendor_aosp" remote="pex" />
+  <project path="vendor/aosp" name="vendor_pex" remote="raid" />
   <project path="vendor/gapps" name="darkbeast69/vendor_gapps" remote="gitlab" clone-depth="1" revision="eleven" />
-  <project path="vendor/custom-preference" name="vendor_support" remote="pex" />
+  <project path="vendor/custom-preference" name="vendor_support_pex" remote="raid" />
 
   <!-- Hardware repos -->
   <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" remote="pixel" />
@@ -190,8 +197,8 @@
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="pixel" />
   <project path="packages/apps/PermissionController" name="packages_apps_PermissionController" remote="pixel-plus" />
   <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" remote="pixel" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="pex" />
-  <project path="packages/apps/RavenLair" name="Fan-Edition_Settings" remote="pex"  />
+  <project path="packages/apps/Settings" name="pex_apps_Settings" remote="raid" />
+  <project path="packages/apps/RavenLair" name="Fan-Edition_pex" remote="raid"  />
   <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="pixel" />
   <project path="packages/apps/Snap" name="packages_apps_Snap" remote="pixel" />
   <project path="packages/apps/Stk" name="packages_apps_Stk" remote="pixel" />
@@ -200,7 +207,7 @@
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="pex" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="pixel-plus" />
   <project path="packages/modules/CaptivePortalLogin" name="packages_modules_CaptivePortalLogin" remote="pixel" />
-  <project path="packages/modules/DnsResolver" name="packages_modules_DnsResolver" remote="pixel" />
+  <project path="packages/modules/DnsResolver" name="AICP/packages_modules_DnsResolver" groups="pdk-cw-fs,pdk-fs" remote="github" revision="r11.1" />
   <project path="packages/modules/NetworkStack" name="packages_modules_NetworkStack" remote="pixel" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="pixel" />
   <project path="packages/resources/devicesettings-custom" name="packages_resources_devicesettings-custom" remote="pixel" />
@@ -225,7 +232,7 @@
   <project path="system/incremental_delivery" name="system_incremental_delivery" remote="pixel" />
   <project path="system/libufdt" name="system_libufdt" remote="pixel" />
   <project path="system/media" name="system_media" remote="pixel" />
-  <project path="system/netd" name="system_netd" remote="pex" revision="eleven-plus" />
+  <project path="system/netd" name="AICP/system_netd" remote="github" revision="r11.1" />
   <project path="system/nfc" name="system_nfc" remote="pixel" />
   <project path="system/sepolicy" name="system_sepolicy" remote="pixel" />
   <project path="system/timezone" name="system_timezone" remote="pixel" />
@@ -245,4 +252,7 @@
   <project path="OTA" name="OTA" remote="pex" revision="eleven" >
       <linkfile src="support/ota.py" dest="ota.py" />
     </project>
+  
+  <!-- Other additions -->
+  <project path="external/hosts" name="StevenBlack/hosts" remote="github" revision="master" />
 </manifest>
